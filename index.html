@@ -24,5 +24,57 @@ Date n Time.</button>
 
 <iframe src="https://steamdb.info/embed/?appid=113020" height="389px" width="100%" scrolling="no" frameborder="0"></iframe>
 
+<div id="js-flip-1" class="flip">
+    <div class="card77">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+    </div>
+</div>
+
+<div id="js-flip-2" class="flip">
+    <div class="card77">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+    </div>
+</div>
+
+<div id="js-flip-3" class="flip">
+    <div class="card77">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+    </div>
+</div>
+
+<script type="text/javascript">// <![CDATA[
+    function loadCSS(filename){ 
+       var file = document.createElement("link");
+       file.setAttribute("rel", "stylesheet");
+       file.setAttribute("type", "text/css");
+       file.setAttribute("href", filename);
+       document.head.appendChild(file);
+    }
+loadCSS("alegolf.com/sites/default/files/pictures/picture_sub1/dat_ale/css/qlhv-nhahang.css");
+// ]]></script>
+
+<script>$('#js-flip-1').toggle(
+    function() {
+        $('#js-flip-1 .card77').addClass('flipped');
+    },
+    function() { $('#js-flip-1 .card77').removeClass('flipped');
+    }
+);
+
+$('#js-flip-2').bind('click mouseleave', function() {
+    $('#js-flip-2 .card77').toggleClass('flipped');
+});
+
+$('#js-flip-3').bind({
+    click: function() {
+        $('#js-flip-3 .card77').toggleClass('flipped');
+    },
+    mouseleave: function() {
+        $('#js-flip-3 .card77').toggleClass('flipped');
+    }
+});</script>
 </body>
 </html> 
